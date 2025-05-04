@@ -1,0 +1,422 @@
+.quote {
+  padding: 100px 0 46px 0;
+  overflow: hidden;
+}
+
+.quote__container-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  grid-template-areas:
+    "title title"
+    "image description"
+    "image cite";
+  column-gap: 80px;
+}
+
+.quote__text {
+  font-size: 20px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.quote__about {
+  font-size: 20px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+  margin-bottom: 0;
+}
+
+.quote__block-text {
+  display: inline-block;
+  grid-area: description;
+  max-width: 500px;
+  margin-bottom: 38px;
+}
+
+.quote__title {
+  grid-area: title;
+  margin-bottom: 45px;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  text-align: center;
+  padding-left: 50px;
+}
+
+.quote__text {
+  margin-bottom: 29px;
+}
+
+.quote__text-slogan {
+  margin: 0;
+  font-style: normal;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: uppercase;
+  padding-left: 30px;
+  margin-bottom: 32px;
+  max-width: 450px;
+  position: relative;
+}
+
+.quote__about {
+  max-width: 430px;
+}
+
+.quote__blockq {
+  max-width: 500px;
+  grid-area: cite;
+  margin: 0;
+  padding: 0;
+}
+
+.quote__block {
+  display: flex;
+  gap: 25px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.quote__quote::before {
+  content: "“ ";
+  position: absolute;
+  top: -8px;
+  left: 34px;
+  color: var(--dark-purple);
+  font-weight: 900;
+  margin-left: -35px;
+}
+
+.quote__quote::after {
+  content: " ”";
+  color: var(--dark-purple);
+  font-weight: 900;
+}
+
+.quote__cite {
+  font-size: 20px;
+}
+
+.quote__block-img {
+  aspect-ratio: 1 / 1;
+  grid-area: image;
+  min-width: 600px;
+  min-height: 596px;
+}
+
+.quote__photo-img {
+  width: 100%; 
+  height: 100%;
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.quote__cite-block {
+  display: inline-block;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: none;
+  max-width: 234px;
+}
+
+.quote__collage-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+@media (max-width: 1200px) {
+  .quote {
+    padding: 70px 0 31px 0;
+  }
+
+  .quote__container-grid {
+    grid-template-columns: 1fr 1.1fr;
+    column-gap: 40px;
+  }
+
+  .quote__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 26px;
+    padding-left: 0;
+  }
+
+  .quote__text,
+  .quote__about {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .quote__text {
+    margin-bottom: 26px;
+  }
+
+  .quote__text-slogan {
+    font-size: 30px;
+    line-height: 36px;
+    padding-left: 25px;
+    margin-bottom: 21px;
+    max-width: 397px;
+    position: relative;
+  }
+
+  .quote__about {
+    max-width: 400px;
+  }
+
+  .quote__block {
+    gap: 41px;
+  }
+
+  .quote_block-text {
+    margin-bottom: 38px;
+  }
+
+.quote__block-img {
+  aspect-ratio: 1 / 1;
+  grid-area: image;
+  min-width: 382px;
+  min-height: 380px;
+  margin-top: 4px;
+}
+
+  .quote__photo-img {
+    width: 70px;
+    height: 70px;
+    margin-right: 0;
+    padding-top: 0;
+  }
+
+  .quote__cite-block {
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 900px) {
+  .quote {
+    padding: 60px 0 30px 0;
+  }
+
+  .quote__container-grid {
+      grid-template-columns: 1fr 1.75fr;
+      grid-template-areas:
+      "title title"
+      "image description"
+      "cite cite";
+      align-items: center;
+      column-gap: 30px;
+      row-gap: 30px;
+  }
+
+  .quote__blockq {
+    grid-area: cite;
+    max-width: 688px;
+    gap: 30px;
+    padding-top: 10px;
+  }
+
+  .quote__slogan-container {
+    max-width: 688px;
+  }
+
+  .quote__block-text {
+    max-width: 278px;
+    grid-area: description;
+    padding-top: 34px;
+  }
+
+  .quote__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: -5px;
+    grid-area: title;
+}
+
+  .quote__text,
+  .quote__about {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .quote__text {
+    margin-bottom: 22px;
+  }
+
+  .quote__collage-img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: 100%;
+    max-width: 382px;
+    max-height: 380px;
+    grid-area: image;
+  }
+
+  .quote__slogan-container {
+    max-width: 688px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quote__text-slogan {
+    font-size: 32px;
+    line-height: 36px;
+    padding-left: 20px;
+    max-width: 688px;
+  }
+
+  .quote__block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 0;
+    gap: 31px;
+  }
+
+  .quote__photo-img {
+    max-width: 100px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .quote {
+    padding: 60px 0 30px 0;
+  }
+
+  .quote__container-grid {
+    justify-content: center;
+    grid-template-columns: unset;
+    grid-template-areas:
+    "title"
+    "description"
+    "image"
+    "cite";
+    row-gap: 15px;
+  }
+
+  .quote__block-img {
+    width: 100%;
+    height: auto;
+    max-height: unset;
+  }
+
+  .quote__block-text {
+    max-width: 100%;
+    padding-top: 15px;
+  }
+
+  .quote__collage-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  .quote__about {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .quote__block {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote {
+    padding: 30px 0 15px 0;
+  }
+
+  .quote__container-grid {
+    justify-content: center;
+    grid-template-columns: 280px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "title"
+    "description"
+    "image"
+    "cite";
+    row-gap: 15px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .quote__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 0;
+  }
+
+  .quote__text,
+  .quote__about {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .quote__text {
+    margin-bottom: 16px;
+  }
+
+  .quote__blockq {
+    padding-top: 5px;
+  }
+
+  .quote__block {
+    gap: 0;
+  }
+
+  .quote__about {
+    max-width: 280px;
+    margin-bottom: 0;
+  }
+
+  .quote__text-slogan {
+    font-size: 18px;
+    line-height: 26px;
+    padding-left: 15px;
+    margin-bottom: 9px;
+    max-width: 280px;
+    position: relative;
+  }
+
+  .quote__block {
+    padding-left: 0;
+    justify-content: flex-start;
+  }
+
+  .quote__block-img {
+    margin: 0;
+    min-width: 280px;
+    min-height: 100%;
+}
+
+  .quote__photo-img {
+    margin: 0;
+    padding: 0;
+    width: 56px;
+    height: 56px;
+  }
+
+  .quote__cite-block {
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 161px;    
+    padding-left: 11px;
+  }
+
+  .quote__block-text {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+}

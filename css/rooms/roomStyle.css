@@ -1,0 +1,14 @@
+
+@import "../style.css";
+
+@import "../global.css";
+@import "../header.css";
+@import "../footer.css";
+@import "../var.css";
+
+@import "./header.css";
+@import "./back.css";
+@import "./promo.css";
+@import "./about.css";
+@import "./question.css";
+@import "./zal.css";

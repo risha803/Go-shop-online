@@ -1,0 +1,55 @@
+.back {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.back__link {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.back__text {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+@media (max-width: 1200px) {
+  .back {
+    max-width: 904px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .back {
+    max-width: 688px;
+    margin: 0 auto;
+  }
+
+  .back__text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 320px) {
+  .back {
+    max-width: 280px;
+    margin: 0;
+    padding-left: 19px;
+  }
+
+  .back__icon {
+    max-width: 16px;
+  }
+
+  .back__link {
+    gap: 6px;
+  }
+
+  .back__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

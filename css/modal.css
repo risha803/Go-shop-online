@@ -1,0 +1,147 @@
+@media (min-width: 768px) and (max-width: 1440px) {
+  .overlay {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    padding: 60px 0 80px 0;
+    background-color: var( --bold-purple);
+    width: calc(100% - 168px);
+    max-height: 498px;
+    margin: 0 auto;
+    top: 145px;
+    left: 84px;
+  }
+
+  .modal__container {
+    position: relative;
+    padding: 0 150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .modal__title {
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .modal__btn-close {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    background-image: url('../img/img/close-white.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 42px;
+    height: 42px;
+    top: -45px;
+    right: 15px
+  }
+
+  .modal__wrapper {
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .modal__name,
+  .modal__phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 6px;
+  }
+
+  .modal__name-text,
+  .modal__phone-text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: var(--white);
+    text-align: left;
+  }
+
+  .modal__input-name,
+  .modal__phone-input {
+    width: 100%;
+    min-height: 52px;
+    padding-left: 10px;
+  }
+
+  .modal__submit {
+    background-color: var(--white);
+    border-radius: 10px;
+    max-width: 300px;
+    padding: 16px 50px;
+    color: var(--dark-purple);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 675px) {
+  .modal__container {
+    padding: 0 60px;
+  }
+}
+
+
+@media (max-width: 520px) {
+  .modal {
+    width: calc(100% - 40px);
+    top: 20px;
+    left: 20px;
+  }
+
+  .modal__container {
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .modal__title {
+    font-size: 20px;
+  }
+
+  .modal__btn-close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -30px;
+    right: 10px
+  }
+
+  .modal__wrapper {
+    max-width: 220px;
+    gap: 50px;
+  }
+
+  .modal__input-name,
+  .modal__phone-input {
+    min-height: 42px;
+  }
+
+  .modal__submit {
+    max-width: 240px;
+    padding: 12px 39px;
+    color: var(--dark-purple);
+    font-size: 18px;
+  }
+}

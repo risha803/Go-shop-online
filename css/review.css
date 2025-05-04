@@ -1,0 +1,265 @@
+.review {
+  overflow: hidden;
+  padding: 50px 0 25px;
+}
+
+.review__container {
+  padding: 0 100px;
+}
+
+.review__title {
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 46px;
+  font-weight: 700;
+}
+
+.review__item-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  gap: 10px;
+}
+
+.review__list {
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.review__item {
+  max-width: 980px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.review__img,
+.review__gradient::after {
+  max-width: 280px;
+  max-height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.review__gradient {
+  position: relative;
+}
+
+.review__gradient::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  background: var(--review-gradient);
+  z-index: 2;
+}
+
+.review__img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 0 20%;
+  float: left;
+}
+
+.review__text {
+  margin-top: 52px;
+  font-size: 20px;
+  line-height: 28px;
+  max-width: 680px;
+}
+
+.review__img-one {
+  object-position: 0 0;
+}
+
+.review__img-two {
+  object-position: 0 30%;
+}
+
+.review__author {
+  text-align: center;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@media (max-width: 1200px) {
+  .review {
+    padding: 35px 0 0 0;
+  }
+
+  .review__container {
+    max-width: 751px;
+    padding: 0 74px;
+  }
+
+  .review__item-container {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 172px;
+    gap: 21px;
+  }
+  
+  .review__list {
+    padding-left: 23px;
+    max-width: 751px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .review__item {
+    gap: 39px;
+  }
+
+  .review__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 26px;
+  }
+
+  .review__img {
+    max-width: 172px;
+    max-height: 172px;
+    object-position: 0 20%;
+  }
+
+  .review__img, .review__gradient::after {
+    width: 172px;
+    height: 172px;
+  }
+
+  .review__text {
+    margin-top: 35px;
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 515px;
+  }
+
+  .review__author {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .review {
+    padding: 30px 0 0 0;
+  }
+
+  .review__container {
+    max-width: 688px;
+  }
+
+  .review__list {
+    padding-left: 29px;
+    gap: 26px;
+  }
+
+  .review__item {
+    gap: 15px;
+  }
+
+  .review__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 31px;
+  }
+
+  .review__img {
+    max-width: 153px;
+    max-height: 153px;
+  }
+
+  .review__author {
+    font-size: 14px;
+    line-height: 20px;
+
+  }
+
+  .review__text {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 393px;
+  }
+
+  .review__gradient::after {
+    width: 153px;
+    height: 153px;
+  }
+}
+
+@media (max-width: 590px) {
+  .review {
+    padding: 15px 0;
+  }
+
+  .review__container {
+    max-width: 280px;
+    padding: 0 20px;
+  }
+
+  .review__title {
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 16px;
+  }
+
+  .review__list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  }
+
+  .review__item {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 280px;
+  }
+
+  .review__img {
+    max-width: 86px;
+    max-height: 86px;
+    object-position: 0 20%;
+  }
+
+  .review__gradient::after {
+    width: 86px;
+    height: 86px;
+  }
+
+  .review__author {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .review__item-container {
+    max-width: 280px;
+    align-items: center;
+    gap: 9px;
+  }
+
+  .review__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .review__text {
+    margin-top: 0;
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 280px;
+    margin-left: 0;
+  }
+}

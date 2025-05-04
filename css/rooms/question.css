@@ -1,0 +1,186 @@
+.question {
+  padding: 50px 0;
+}
+
+.question__container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.question__container-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  grid-template-areas:
+    "title title"
+    "image description"
+    "image text";
+  column-gap: 80px
+}
+
+.question__title {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  grid-area: title;
+  max-width: 980px;
+}
+
+.question__img-block {
+  aspect-ratio: 600 / 424;
+  max-width: 600px;
+  max-height: 424px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.question__img-block-80 {
+  background-image: url('../../img/img/vibes-about.jpg');
+}
+
+.question__img-block-neon {
+  background-image: url('../../img/img/neon-about.jpg');
+}
+
+.question__img-block-wildwest {
+  background-image: url('../../img/img/wildwest-about.jpg');
+}
+
+.question__img-block-starwars {
+  background-image: url('../../img/img/starwars-about.jpg');
+}
+
+.question__description {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 15px;
+  max-width: 500px;
+}
+
+.question__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+@media (max-width: 1200px) {
+  .question {
+    padding: 35px 0;
+  }
+
+  .question__container {
+    max-width: 904px;
+    margin: 0 auto;
+  }
+
+  .question__container-grid {
+    column-gap: 0;
+  }
+
+  .question__img-block {
+    aspect-ratio: 461 / 326;
+    max-width: 461px;
+    max-height: 326px;
+  }
+
+  .question__text {
+    font-size: 18px;
+    line-height: 28px;
+  }  
+
+  .question__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 36px;
+  }
+
+  .question__description {
+    gap: 15px;
+    max-width: 413px;
+  }
+}
+
+@media (max-width: 768px) {
+  .question {
+    padding: 30px 0;
+  }
+
+  .question__container {
+    max-width: 688px;
+    margin: 0 auto;
+  }
+
+  .question__container-grid {
+    column-gap: 0;
+  }
+
+  .question__img-block {
+    aspect-ratio: 329 / 326;
+    max-width: 329px;
+  }
+
+  .question__text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .question__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  .question__description {
+    gap: 15px;
+    max-width: 313px;
+  }
+}
+
+@media (max-width: 480px) {
+  .question {
+    padding: 15px 0 0 0;
+  }
+
+  .question__container {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .question__container-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "image"
+      "description"
+      "text";
+    row-gap: 15px;
+  }
+
+  .question__img-block {
+    aspect-ratio: 280 / 180;
+    max-width: 280px;
+    max-height: 180px;
+  }
+
+  .question__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  .question__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 0;
+  }
+
+  .question__description {
+    gap: 15px;
+    max-width: 280px;
+  }
+}
